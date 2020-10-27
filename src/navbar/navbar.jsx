@@ -45,9 +45,24 @@ class Navbar extends Component{
    <div class="navbar-collapse collapse" id="navbarCollapse">
     <ul className="navbar-nav mr-auto">
         <NavLink className="nav-item nav-link" to="/home">Home</NavLink>
-      
-        <NavLink className="nav-item nav-link" to="/codeforces">Codeforces</NavLink>
-        <NavLink className="nav-item nav-link" to="/contests">Contests</NavLink>
+        <li class="nav-item dropdown">
+        <a 
+        class="nav-link 
+        dropdown-toggle" 
+        href="#" 
+        id="navbarDropdown" 
+        role="button" 
+        data-toggle="dropdown" 
+        aria-haspopup="true" aria-expanded="false">
+          Eduction
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <NavLink className="nav-item nav-link dropdown-item" to="/codeforces">Codeforces</NavLink>
+         <NavLink className="nav-item nav-link dropdown-item" to="/contests">Contests</NavLink>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item nav-item nav-link" href="/">Tutorial</a>
+        </div>
+      </li>
       </ul>
       
       

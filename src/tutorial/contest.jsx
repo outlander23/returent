@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import Host from "./host";
 import {NavLink,Link} from "react-router-dom";
 import Sidebar from "../navbar/sidebar";
 
@@ -14,8 +14,10 @@ class Table extends Component{
 		
    <tr>
       <td>{title}</td>
-      <td>{testers}</td>
-      <td>{hosts}</td>
+       <td><Host hosts={hosts}/></td>
+        <td><Host hosts={testers}/></td>
+   
+     
     </tr>
 
 			

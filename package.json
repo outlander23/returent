@@ -11,9 +11,11 @@
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.10",
     "react": "^16.13.1",
+    "react-awesome-reveal": "^3.3.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-toastify": "^6.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -12,6 +12,7 @@ class Home extends Component{
 	
 	<div className="wrapper d-flex align-items-stretch">
 	<Sidebar />
+	<div>
 	<section id="banner">
 				<div className="inner split">
 					<section>
@@ -46,6 +47,11 @@ class Home extends Component{
 
 				
 			</section>
+			
+			
+			
+			
+			</div>
     	</div>
     	
 	

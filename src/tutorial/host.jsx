@@ -10,8 +10,8 @@ class Host extends Component{
 	
 	state={
 	
-	  data: [
-	  {
+	  data: {
+	  
           "id": "o~MMQ",
     "username": "shakib75bd",
     "name": "Shakib Hossain Shanto",
@@ -26,10 +26,31 @@ class Host extends Component{
     "error": 3,
     "other": 0,
     "user": null
-        }
+        
 	
-	]
 	}
+	}
+	
+	
+	
+		async componentDidMount(){
+		const { hosts }=this.props;
+		
+		 try{
+		 const data = await http.get(endPoint+hosts[0]);
+		 const contest= data['data'];
+		 this.setState({data: contest});
+		
+		 
+		 }
+		 catch (ex){
+		   alert("servar error");
+		 
+		 }
+		
+	
+	};
+	
 	
 	
 	
@@ -41,7 +62,7 @@ class Host extends Component{
 	
 	
 	return (
-	<h1> {username} </h1>
+	<p> {username} </p>
 	
 	
 	);

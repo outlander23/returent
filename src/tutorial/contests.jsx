@@ -6,6 +6,7 @@ import Sidebar from "../navbar/sidebar";
 import http from "../http/httpService";
 import Host from "./host";
 const endPoint="http://mah2020.herokuapp.com/api/contests/"
+
 class Contests extends Component{
 
 	state={
